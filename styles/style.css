@@ -1,0 +1,281 @@
+/* .logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+} */
+
+body{
+    margin: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    background: rgb(255,182,55);
+    background: linear-gradient(48deg, rgba(255,182,55,0.8906337535014006) 45%, 
+    rgba(255,49,49,0.8290091036414566) 100%);
+
+}
+
+/*grid*/
+.grid-container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 3fr 3fr 2fr;
+    grid-template-rows: repeat(9, 1fr);
+    /* padding: 1vh; */
+    gap: 1vh;
+    align-items: center;
+    justify-content: center;
+    /* justify-items: center; */
+}
+
+.item1{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 1vh;
+    padding-top: 4vh;
+}
+
+.item2{
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    padding-top: 7vh;
+}
+
+.item3{
+    grid-row-start: 7;
+    grid-row-end: 8;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-family: 'Inter', sans-serif;
+    color: black;
+}
+
+.item4{
+    grid-row-start: 8;
+    grid-row-end: 9;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: start;
+}
+
+.item5{
+    grid-row-start: 8;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: start;
+}
+
+/* .item6{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.item7{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.item8{
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.item9{
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.item10{
+    grid-row-start: 8;
+    grid-row-end: 9;
+    grid-column-start: 4;
+    grid-column-end: 5;
+} */
+
+.columna{
+    grid-row-start: 1;
+    grid-row-end: 9;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.item11{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: 2.5vh;
+}
+
+footer{
+    grid-row-start: 9;
+    grid-row-end: 10;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: center;
+}
+
+/*Text Area de ingreso*/
+
+.textAreaIngreso{
+    border: none;
+    font-family: 'Inter', sans-serif;
+    color: red;
+    resize: none;
+    outline:none;
+    font-size: 4vh;
+    background-color: transparent;
+}
+
+.textAreaIngreso::placeholder{
+    color: red;
+    font-weight: 400;
+    font-size: 4vh;
+}
+
+/*Ocultando de primera vista*/
+/* .textAreaRespuesta, .btnCopiar{
+    visibility: hidden;
+} */
+
+/* .textAreaRespuesta{
+    display: inline;
+} */
+
+/*Ultima columna*/
+.columna{
+    background-color: white;
+    margin-top: 1vh;
+    border-radius: 1em;
+    height: 100%;
+    box-shadow: rgb(124, 117, 117, 0.3) 1vh 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 2vh;
+}
+
+.textAreaRespuesta{
+    height: 90%;
+    border: none;
+    resize: none;
+    outline: none;
+    margin: 5vh;
+    position: relative;
+    top: 10vh;
+    padding: 5vh;
+    background-color: blue;
+}
+
+.textosResultado{
+    margin: 1vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5vh;
+}
+
+.parrafoUno{
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.textosResultado > p{
+    padding: 1vh;
+}
+
+/*imagenes cuentos de la cripta*/
+.cripta{
+    width: 17vh;
+    height: 17vh;
+    align-items: flex-start;
+}
+
+.imagenCripta{
+    width: 80%;
+    height: 40%;
+    border-radius: 1vh;
+    margin: 1vh;
+    position: absolute;
+    top:20vh;
+}
+
+/*botones*/
+.btnCopiar, .btnEncriptar, .btnDesencriptar{
+    font-family: 'Inter', sans-serif;
+    padding: 2vh;
+    border-radius: 1em;
+    width: 75%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 3vh;
+    background-color: red;
+    color: white;
+}
+
+.btnCopiar{
+    margin-bottom: 1vh;
+}
+
+button > span{
+    font-family: 'Creepster', cursive;
+    font-weight: 800;
+    color: black;
+    margin: 0.3vh;
+}
+
+.btnDesencriptar, .btnCopiar{
+    background-color: rgba(255, 102, 0, 0.623);
+}
+
+.btnEncriptar, .btnDesencriptar{
+    transition: 1s;
+}
+
+.btnEncriptar:hover, .btnDesencriptar:hover{
+    transform: scaleX(1.2);
+}
+
+/*Iconos*/
+.fa-circle-exclamation{
+    margin: 1vh;
+}
+
+/*footer*/
+.footer{
+    font-family: 'Creepster', cursive;
+    font-weight: 100;
+    font-size: 3vh;
+    background-color: red;
+    color: white;
+    padding: 2vh;
+    margin-top: 5vh;
+}
+
+
