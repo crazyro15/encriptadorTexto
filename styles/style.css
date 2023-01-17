@@ -142,14 +142,19 @@ footer{
     border: none;
     font-family: 'Inter', sans-serif;
     color: red;
+    text-shadow: none;
     resize: none;
     outline:none;
     font-size: 4vh;
     background-color: transparent;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
 }
 
 .textAreaIngreso::placeholder{
     color: red;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
     font-weight: 400;
     font-size: 4vh;
 }
@@ -187,7 +192,6 @@ footer{
     position: relative;
     top: 10vh;
     padding: 5vh;
-    background-color: blue;
 }
 
 .textosResultado{
