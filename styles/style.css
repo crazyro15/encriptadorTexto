@@ -18,7 +18,7 @@ body{
     background: rgb(255,182,55);
     background: linear-gradient(48deg, rgba(255,182,55,0.8906337535014006) 45%, 
     rgba(255,49,49,0.8290091036414566) 100%);
-
+    background-image: url(https://gifer.com/embed/iLx);
 }
 
 /*grid*/
@@ -192,6 +192,7 @@ footer{
     position: relative;
     top: 10vh;
     padding: 5vh;
+    font-size: 3vh;
 }
 
 .textosResultado{
@@ -280,6 +281,130 @@ button > span{
     color: white;
     padding: 2vh;
     margin-top: 5vh;
+}
+
+/*Toastify*/
+.toast-message{
+    font-family: 'Creepster', cursive;
+    color: white;
+    font-weight: 100;
+    font-size: 3.5vh;
+}
+
+.info{
+    border-radius: 1em;
+}
+
+/*Responsive*/
+@media screen and (max-width: 1024px){
+
+    .grid-container{
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(12, 1fr);
+        /* padding: 1vh; */
+        gap: 0;
+        align-items: center;
+        /* justify-content: center;
+        justify-items: center; */
+        /* margin: 1vh; */
+    }
+
+    .item1{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        padding: 1vh;
+        padding-top: 4vh;
+        margin: auto;
+    }
+    
+    .item2{
+        grid-row-start: 3;
+        grid-row-end: 7;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin: 1vh;
+    }
+    
+    .item3{
+        grid-row-start: 7;
+        grid-row-end: 8;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        font-family: 'Inter', sans-serif;
+        color: black;
+    }
+    
+    .item4{
+        grid-row-start: 8;
+        grid-row-end: 9;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .item5{
+        grid-row-start: 8;
+        grid-row-end: 9;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .columna{
+        grid-row-start: 10;
+        grid-row-end: 11;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin: auto;
+        position: static;
+    }
+    
+    .item11{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        margin: auto;
+
+    }
+
+    .item7{
+        position: absolute;
+        top: auto;
+    }
+    
+    footer{
+        grid-row-start: 11;
+        grid-row-end: 12;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .btnCopiar, .btnEncriptar, .btnDesencriptar{
+        font-size: 2vh;
+        padding: 1vh;
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 768px){
+
+    body{
+        background: red;
+    }
+
 }
 
 

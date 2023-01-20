@@ -68,7 +68,16 @@ function copiar(txt){
     input.select();
     document.execCommand('copy');
     input.remove();
-    alert("Texto copiado al portapapeles!");
+    Toastify({
+        text: "Mensaje copiado exitosamente!",
+        className: "info",
+        position: "center",
+        className: 'toast-message',
+        avatar: "imagenes/cheked24.png",
+        style: {
+          background: "linear-gradient(to right, #f00000, #000000)",
+        }
+      }).showToast();
 }
 
 copiando.addEventListener("click", copiar);
