@@ -18,7 +18,7 @@ body{
     background: rgb(255,182,55);
     background: linear-gradient(48deg, rgba(255,182,55,0.8906337535014006) 45%, 
     rgba(255,49,49,0.8290091036414566) 100%);
-    background-image: url(https://gifer.com/embed/iLx);
+    background-image: url("../imagenes/iLx.gif");
 }
 
 /*grid*/
@@ -57,7 +57,7 @@ body{
     grid-column-start: 2;
     grid-column-end: 3;
     font-family: 'Inter', sans-serif;
-    color: black;
+    color: white;
 }
 
 .item4{
@@ -141,7 +141,7 @@ footer{
 .textAreaIngreso{
     border: none;
     font-family: 'Inter', sans-serif;
-    color: red;
+    color: white;
     text-shadow: none;
     resize: none;
     outline:none;
@@ -153,8 +153,8 @@ footer{
 }
 
 .textAreaIngreso::placeholder{
-    color: red;
-    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    color: white;
+    text-shadow: -1px 0 #f00, 0 1px #f00, 1px 0 #f00, 0 -1px #f00;
     font-weight: 400;
     font-size: 4vh;
 }
