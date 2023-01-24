@@ -471,7 +471,7 @@ button > span{
         grid-row-end: 14;
         grid-column-start: 1;
         grid-column-end: 1;
-        margin: 1vh;
+        margin: 3vh;
         height: 45vh;
     }
     
