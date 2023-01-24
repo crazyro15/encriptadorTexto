@@ -18,8 +18,9 @@ function encriptar() {
         parrafoUno.textContent = "Debes indicarme que texto encriptar!";
         parrafoDos.style.visibility = "visible";
         copiando.style.visibility = "hidden";
+        ingreseTexto.focus();
 
-    } else {
+    } else if(ingreseTexto.value.match(/^[a-z ]*$/)){
 
         resultado.style.visibility = "visible";
         imgCripta.style.visibility = "hidden";
@@ -29,6 +30,26 @@ function encriptar() {
         let texto = ingreseTexto.value;
         let encriptado = texto.replace(/e/gi, "enter").replace(/i/gi, "imes").replace(/a/gi, "ai").replace(/o/gi, "ober").replace(/u/gi, "ufat");
         resultado.innerHTML = encriptado;
+        ingreseTexto.value = "";
+        ingreseTexto.focus();
+
+    }else{
+
+        Toastify({
+            text: "No se permiten números ni caracteres especiales!",
+            className: "info",
+            position: "center",
+            className: 'toast-message',
+            duration: "3000",
+            avatar: "imagenes/001-report.png",
+            style: {
+              background: "linear-gradient(to right, #fe790c, #ff3232)",
+              
+            //   border: "0.5rem outset black",
+            }
+          }).showToast();
+          ingreseTexto.value = "";
+          ingreseTexto.focus();
     };
 };
 
@@ -38,27 +59,11 @@ function desencriptar(){
     let texto = ingreseTexto.value;
     let encriptado = texto.replace(/enter/gi, "e").replace(/imes/gi, "i").replace(/ai/gi, "a").replace(/ober/gi, "o").replace(/ufat/gi, "u");
     resultado.innerHTML = encriptado;
+    ingreseTexto.value = "";
+    ingreseTexto.focus();
 }
 
 btnDesencriptar.addEventListener("click", desencriptar);
-
-/*function copiar(){
-    navigator.clipboard.readText().then((resultado) => document.querySelector("#resultado").innerHTML = resultado);
-}
-
-copiando.addEventListener("click", copiar);
-*/
-
-/*function copiar(txt){
-    resultado.value = txt;
-    resultado.setAttribute("readonly", "");
-    resultado.select();
-    document.execCommand("copy");
-    document.body.removeChild(resultado);
-}
-
-copiando.addEventListener("click", copiar);
-*/
 
 function copiar(txt){
     let contenido = document.getElementById('resultado').textContent;
@@ -73,11 +78,16 @@ function copiar(txt){
         className: "info",
         position: "center",
         className: 'toast-message',
+        duration: "2000",
         avatar: "imagenes/cheked24.png",
         style: {
-          background: "linear-gradient(to right, #f00000, #000000)",
+          background: "linear-gradient(to right, #fe790c, #ff3232)",
+          
+        //   border: "0.5rem outset black",
         }
       }).showToast();
+      ingreseTexto.value = "";
+      ingreseTexto.focus();
 }
 
 copiando.addEventListener("click", copiar);

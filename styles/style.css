@@ -15,10 +15,11 @@ body{
     margin: 0;
     height: 100vh;
     box-sizing: border-box;
-    background: rgb(255,182,55);
+    /* background: rgb(255,182,55);
     background: linear-gradient(48deg, rgba(255,182,55,0.8906337535014006) 45%, 
-    rgba(255,49,49,0.8290091036414566) 100%);
+    rgba(255,49,49,0.8290091036414566) 100%); */
     background-image: url("../imagenes/iLx.gif");
+    background-size: cover;
 }
 
 /*grid*/
@@ -287,12 +288,7 @@ button > span{
 .toast-message{
     font-family: 'Creepster', cursive;
     color: white;
-    font-weight: 100;
     font-size: 3.5vh;
-}
-
-.info{
-    border-radius: 1em;
 }
 
 /*Responsive*/
