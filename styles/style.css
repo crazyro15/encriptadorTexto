@@ -257,7 +257,7 @@ button > span{
 }
 
 .btnDesencriptar, .btnCopiar{
-    background-color: rgba(255, 102, 0, 0.623);
+    background-color: rgb(255, 102, 0);
 }
 
 .btnEncriptar, .btnDesencriptar{
@@ -323,6 +323,7 @@ button > span{
         grid-column-start: 1;
         grid-column-end: 3;
         margin: 1vh;
+        padding: 5vh;
     }
     
     .item3{
@@ -331,7 +332,8 @@ button > span{
         grid-column-start: 1;
         grid-column-end: 3;
         font-family: 'Inter', sans-serif;
-        color: black;
+        color: white;
+        text-align: center;
     }
     
     .item4{
@@ -374,7 +376,9 @@ button > span{
 
     .item7{
         position: absolute;
-        top: auto;
+        top: 45vh;
+        width: 40vh;
+        height: 20vh;
     }
     
     footer{
@@ -389,7 +393,7 @@ button > span{
     .btnCopiar, .btnEncriptar, .btnDesencriptar{
         font-size: 2vh;
         padding: 1vh;
-        width: 100%;
+        width: 80%;
     }
 
 }
@@ -398,7 +402,129 @@ button > span{
 @media screen and (max-width: 768px){
 
     body{
-        background: red;
+        background-size: contain;
+    }
+
+    .grid-container{
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(15, 1fr);
+        /* padding: 1vh; */
+        gap: 0;
+        align-items: center;
+        /* justify-content: center;
+        justify-items: center; */
+        /* margin: 1vh; */
+    }
+
+    .item1{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        padding: 1vh;
+        padding-top: 4vh;
+        margin: auto;
+    }
+    
+    .item2{
+        grid-row-start: 3;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        margin: 1vh;
+        padding: 5vh;
+    }
+    
+    .item3{
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        font-family: 'Inter', sans-serif;
+        color: white;
+    }
+    
+    .item4{
+        grid-row-start: 6;
+        grid-row-end: 7;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        width: 100%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .item5{
+        grid-row-start: 7;
+        grid-row-end: 8;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        width: 100%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .columna{
+        grid-row-start: 8;
+        grid-row-end: 14;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        margin: 1vh;
+        height: 45vh;
+    }
+    
+    .item11{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        margin: auto;
+
+    }
+
+    .item7{
+        position: absolute;
+        top: 50vh;
+        width: 30vh;
+        height: 15vh;
+    }
+    
+    footer{
+        grid-row-start: 14;
+        grid-row-end: 15;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .textosResultado {
+        margin: 2vh;
+        position: relative;
+        top: 2vh;
+        /* display: flex; */
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+        font-size: 2.5vh;
+    }
+
+    .btnCopiar, .btnEncriptar, .btnDesencriptar{
+        font-size: 2vh;
+        padding: 1vh;
+        width: 80%;
+        margin: 0.5vh;
+    }
+
+    .btnEncriptar, .btnDesencriptar{
+        transition: none;
+    }
+    
+    .btnEncriptar:hover, .btnDesencriptar:hover{
+        transform: none;
     }
 
 }
